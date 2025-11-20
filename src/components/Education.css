@@ -1,0 +1,86 @@
+.education {
+    background: var(--card-bg);
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.edu-column h3,
+.cert-column h3 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.edu-list,
+.cert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.edu-card {
+    background: var(--bg-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+    transition: var(--transition);
+}
+
+.edu-card:hover {
+    transform: translateX(5px);
+    background: rgba(15, 23, 42, 0.8);
+}
+
+.edu-card h4 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.degree {
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.score {
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.cert-card {
+    background: var(--bg-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.cert-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--primary-color);
+}
+
+.cert-icon {
+    font-size: 1.5rem;
+}
+
+.cert-card p {
+    color: #fff;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .education-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
