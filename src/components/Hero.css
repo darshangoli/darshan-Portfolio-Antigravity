@@ -16,7 +16,8 @@
 .greeting {
     color: var(--primary-color);
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 800;
+    /* Made bolder as requested */
     margin-bottom: 1rem;
     display: block;
 }
@@ -126,7 +127,7 @@
 
     .mobile-only-img {
         display: flex;
-        margin: 2rem auto 3.5rem auto;
+        margin: 2rem auto 1.5rem auto;
         /* Added extra space after photo */
     }
 
