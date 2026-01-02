@@ -1,3 +1,7 @@
+import fitnessImg from '../assets/projects/fitness-tracker.png';
+import cafeteriaImg from '../assets/projects/smart-cafeteria.png';
+import reportImg from '../assets/projects/report-service.png';
+
 export const content = {
   profile: {
     name: "Goli Satya Darshan",
@@ -45,6 +49,7 @@ export const content = {
     {
       title: "Fitness Tracking Portal",
       role: "Developer",
+      image: fitnessImg,
       techStack: ["Java", "Spring Boot", "PostgreSQL", "React", "GenAI"],
       description: "Developed a comprehensive web-based fitness platform to help users track workouts, set fitness goals, monitor progress, and receive personalized nutrition recommendations for a healthier lifestyle.",
       points: [
@@ -58,6 +63,7 @@ export const content = {
     {
       title: "Smart Cafeteria Seating",
       role: "Developer",
+      image: cafeteriaImg,
       techStack: ["Java", "Spring Boot", "Spring Data JPA", "MySQL", "Angular", "Hibernate", "JUnit"],
       description: "Developed a smart cafeteria reservation system to enable employees to book tables and chairs for specific time slots, optimizing seating, minimizing overcrowding, and enhancing the overall dining experience.",
       points: [
@@ -71,6 +77,7 @@ export const content = {
     {
       title: "Report Generation Service – John Wiley",
       role: "Developer",
+      image: reportImg,
       techStack: ["Java", "Spring Boot", "JPA Repository", "Kafka", "WebClient", "SQL", "React", "Hibernate"],
       description: "Working on a client project focused on generating and managing business reports through scalable microservices.",
       points: [
