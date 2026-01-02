@@ -1,14 +1,41 @@
 :root {
-  --primary-color: #0ea5e9; /* Sky blue */
-  --secondary-color: #64748b; /* Slate */
-  --bg-color: #0f172a; /* Dark slate */
-  --card-bg: #1e293b; /* Darker slate for cards */
-  --text-color: #f1f5f9; /* Light slate */
+  --primary-color: #0ea5e9;
+  /* Sky blue */
+  --secondary-color: #64748b;
+  /* Slate */
+  --bg-color: #0f172a;
+  /* Dark slate */
+  --card-bg: #1e293b;
+  /* Darker slate for cards */
+  --text-color: #f1f5f9;
+  /* Light slate */
   --text-muted: #94a3b8;
   --accent-color: #38bdf8;
   --font-main: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   --max-width: 1200px;
   --transition: all 0.3s ease;
+  --nav-bg: rgba(15, 23, 42, 0.95);
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --name-gradient: linear-gradient(to right, #fff, #94a3b8);
+}
+
+:root[data-theme='light'] {
+  --primary-color: #0284c7;
+  /* Darker sky blue for contrast */
+  --secondary-color: #475569;
+  --bg-color: linear-gradient(135deg, #eff6ff 0%, #f1f5f9 100%);
+  /* Blue-50 to Slate-100 */
+  --card-bg: rgba(255, 255, 255, 0.9);
+  /* White with slight transparency */
+  --text-color: #0f172a;
+  /* Dark slate text */
+  --text-muted: #475569;
+  --accent-color: #0ea5e9;
+  --nav-bg: rgba(255, 255, 255, 0.85);
+  /* More transparent for glassmorphism */
+  --shadow-color: rgba(14, 165, 233, 0.15);
+  /* Blue-ish shadow */
+  --name-gradient: linear-gradient(to right, #0f172a, #475569);
 }
 
 * {
@@ -19,10 +46,15 @@
 
 body {
   font-family: var(--font-main);
-  background-color: var(--bg-color);
+  background: var(--bg-color);
+  /* Changed to 'background' to support gradients */
+  background-attachment: fixed;
+  /* Ensures gradient covers full scroll */
   color: var(--text-color);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  transition: background 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
 }
 
 a {
@@ -41,10 +73,16 @@ section {
   margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.2;
   margin-bottom: 1rem;
-  color: #fff;
+  color: var(--text-color);
+  /* Changed from #fff to variable */
 }
 
 h2 {
@@ -103,4 +141,26 @@ h2::after {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 80px;
+    /* Space for bottom nav */
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 3rem 1rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
 }

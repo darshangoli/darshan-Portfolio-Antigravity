@@ -1,6 +1,6 @@
 export const content = {
   profile: {
-    name: "Software Developer",
+    name: "Goli Satya Darshan",
     title: "Oracle Certified Java Programmer & Full-Stack Developer",
     summary: "I am an Oracle certified Java Programmer and results-driven Software Developer skilled in backend and full-stack development. I excel at turning complex requirements into efficient, reliable solutions and bring strong ownership, adaptability, and a problem-solving mindset to deliver scalable, high-quality software.",
     socials: {
@@ -28,7 +28,7 @@ export const content = {
       period: "May 2023 – Aug 2023",
       description: [
         "Worked closely with senior associates to understand business processes and project workflows.",
-        "Developed some capstone projects in Core Java, Java 8 features, React, Spring Framework, and SQL.",
+        "Developed Fitness Tracking Portal a web-based platform designed to help users monitor, manage, and improve their fitness and overall health being.",
         "Learned how projects are planned, tracked, and delivered in the Software Development Life Cycle (SDLC)."
       ]
     }
@@ -36,12 +36,25 @@ export const content = {
   skills: {
     languages: ["Java", "Python"],
     frontend: ["HTML", "CSS", "JavaScript", "Angular JS", "React"],
-    backend: ["Spring Boot", "Spring Data", "Spring MVC", "REST APIs", "Maven", "Hibernate", "Microservices", "Kafka", "AWS"],
-    databases: ["MySQL", "PostgreSQL"],
-    tools: ["Git", "GitHub", "SonarQube"],
+    backend: ["Spring Boot", "Spring Data", "Spring MVC", "REST APIs", "GenAI", "WebClient", "Microservices", "Kafka", "AWS"],
+    databases: ["MySQL", "PostgreSQL", "MongoDB"],
+    tools: ["Git", "GitHub", "Jenkins"],
     testing: ["JUnit", "Mockito"]
   },
   projects: [
+    {
+      title: "Fitness Tracking Portal",
+      role: "Developer",
+      techStack: ["Java", "Spring Boot", "PostgreSQL", "React", "GenAI"],
+      description: "Developed a comprehensive web-based fitness platform to help users track workouts, set fitness goals, monitor progress, and receive personalized nutrition recommendations for a healthier lifestyle.",
+      points: [
+        "Designed and developed user-facing modules including login/registration, dashboard, workout history and goal tracking.",
+        "Implemented backend services to manage user profiles, workout data, fitness goals, and progress metrics.",
+        "Built interactive dashboards with visual insights to track calories burned, workout duration, and fitness trends.",
+        "Integrated Google Gemini API to provide AI-driven workout and nutrition recommendations based on user goals and activity data."
+      ],
+      achievements: "Delivered a platform for fitness tracking that improved user engagement through personalized insights and structured workout planning."
+    },
     {
       title: "Smart Cafeteria Seating",
       role: "Developer",
@@ -50,7 +63,7 @@ export const content = {
       points: [
         "Designed an aerial layout of cafeteria tables and chairs using Angular JS.",
         "Developed backend logic to handle table reservations, time slot management, and conflict resolution.",
-        "Implemented transaction management to ensure data consistency during concurrent booking operations.",
+        "Implemented concurrency control mechanisms to maintain data consistency during simultaneous booking operations.",
         "Wrote JUnit tests for controllers, services, models, and repositories to ensure code reliability."
       ],
       achievements: "Streamlined seating reservations, reducing overcrowding and improving employee satisfaction."
@@ -58,12 +71,12 @@ export const content = {
     {
       title: "Report Generation Service – John Wiley",
       role: "Developer",
-      techStack: ["Java", "Spring Boot", "JPA Repository", "Kafka", "SQL", "React", "Hibernate"],
+      techStack: ["Java", "Spring Boot", "JPA Repository", "Kafka", "WebClient", "SQL", "React", "Hibernate"],
       description: "Working on a client project focused on generating and managing business reports through scalable microservices.",
       points: [
         "Developed REST APIs to handle report generation and data retrieval efficiently.",
         "Implemented Kafka listeners to consume messages and trigger report workflows.",
-        "Queried accurate data from SQL databases using JPA Repository as the DAO layer and Hibernate as an ORM.",
+        "Queried accurate data using JPA Repository as the DAO layer for efficient database communication.",
         "Worked in an Agile environment, collaborating with the team to ensure reliable performance and data consistency."
       ],
       achievements: "Improved data accuracy and report delivery time through optimized queries."
@@ -76,18 +89,21 @@ export const content = {
   education: [
     {
       institution: "GITAM University",
-      degree: "B.Tech in Computer Science",
-      score: "CGPA: 7.96/10"
+      degree: "B.Tech in Computer Science and Engineering",
+      score: "CGPA: 7.96/10",
+      period: "2019 – 2023"
     },
     {
       institution: "Tirumala Junior College",
       degree: "Intermediate",
-      score: "CGPA: 9.46/10"
+      score: "CGPA: 9.46/10",
+      period: "2017 – 2019"
     },
     {
       institution: "Tirumala High School",
       degree: "SSC (10th)",
-      score: "CGPA: 9.7/10"
+      score: "CGPA: 9.70/10",
+      period: "2016 – 2017"
     }
   ]
 };

@@ -10,9 +10,17 @@ const Hero = () => {
         <section id="hero" className="hero">
             <div className="container hero-container">
                 <div className="hero-content">
-                    <span className="greeting">Hello, I'm Darshan Goli</span>
+                    <span className="greeting">Hello, I'm</span>
                     <h1 className="name">{profile.name}</h1>
                     <h2 className="title">{profile.title}</h2>
+
+                    {/* Mobile Image Position */}
+                    <div className="hero-image mobile-only-img">
+                        <div className="img-placeholder">
+                            <img src={profileImg} alt="Profile" className="profile-img" />
+                        </div>
+                    </div>
+
                     <p className="summary">{profile.summary}</p>
                     <div className="hero-buttons">
                         <a href="#projects" className="btn">View Work</a>
@@ -24,7 +32,9 @@ const Hero = () => {
                         <a href={profile.socials.email} target="_blank" rel="noopener noreferrer" className="social-icon">Email</a>
                     </div>
                 </div>
-                <div className="hero-image">
+
+                {/* Desktop Image Position */}
+                <div className="hero-image desktop-only-img">
                     <div className="img-placeholder">
                         <img src={profileImg} alt="Profile" className="profile-img" />
                     </div>

@@ -1,8 +1,9 @@
 .footer {
-    background: #020617;
+    background: var(--card-bg);
     /* Very dark slate */
     padding: 4rem 0 2rem;
     text-align: center;
+    border-top: 1px solid rgba(148, 163, 184, 0.2);
 }
 
 .footer-content h3 {
@@ -24,7 +25,7 @@
 }
 
 .social-link {
-    color: #fff;
+    color: var(--text-color);
     font-weight: 500;
     font-size: 1.1rem;
     position: relative;
@@ -50,7 +51,7 @@
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(148, 163, 184, 0.2);
     padding-top: 2rem;
     font-size: 0.9rem;
     color: var(--text-muted);
